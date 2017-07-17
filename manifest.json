@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "TTN",
+  "description": "Данное расширение помогает продавцам испольующим связку Ebay + Seller-online.com отслеживать почтовые отправления. Обратите внимание, раширение будет работать только в случае если вы выводите деньги через сервис seller-online.com.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://k2b-bulk.ebay.co.uk/ws/eBayISAPI.dll?SalesRecordConsole*",
+                  "http://k2b-bulk.ebay.co.uk/ws/eBayISAPI.dll?MfcISAPICommand=SalesRecordConsole*",
+                  "http://k2b-bulk.ebay.co.uk/ws/eBayISAPI.dll?SalesRecordConsole&SortOrder=ASCEND*",
+                  "http://k2b-bulk.ebay.com/ws/eBayISAPI.dll?SalesRecordConsole*",
+                  "http://k2b-bulk.ebay.com/ws/eBayISAPI.dll?MfcISAPICommand=SalesRecordConsole*",
+                  "http://k2b-bulk.ebay.co.uk/ws/eBayISAPI.dll?SalesRecordConsole&SortOrder=ASCEND*"],
+      "js": ["js/countres.js","js/main.js"],
+      "css": ["button.min.css","styletrack.css"]
+    }
+  ],
+"icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  "browser_action": {
+    "default_icon": "icon128.png",
+    "default_title": "Отслеживание посылок по трек номеру."
+  },
+  "options_page": "options.html",
+  "permissions": ["http://*/*", "https://*/*", "storage"]
+}

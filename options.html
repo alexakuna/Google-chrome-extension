@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Options</title>
+	
+</head>
+<style>
+	body {
+		box-sizing: border-box;
+	}
+	.options {
+		position: relative;
+		color: #676767;
+		width: 300px;
+		margin: auto;
+		padding: 10px 20px;
+		box-shadow: 0 1px 3px #616161;
+		border-radius: 3px;
+		z-index: 1;
+	}
+	.options input {
+		width: 100%;
+		height: 27px;
+		display: block;
+		border: 2px solid #777777;
+		border-radius: 3px;
+	}
+	.options a {
+		display: block;
+		padding: 5px 0;
+		font-size: 16px;
+		text-transform: uppercase;
+		width: 100%;
+		margin-top: 15px;
+		text-decoration: none;
+		color: rgb(34, 190, 52);
+		text-align: center;
+		border: 2px solid rgb(34, 190, 52);
+		border-radius: 3px;
+		transition: all .2s ease;
+	}
+	.options a:hover {
+		background: rgb(34, 190, 52);
+		color: #ffffff;
+	}
+	label .require {
+		color: tomato;
+		font-size: 20px;
+		padding-left: 0 !important;
+	}
+	.popup {
+		display: none !important;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background: rgba(255, 255, 255, .95);
+		box-shadow: 0 1px 10px rgb(34, 190, 52); 
+		color: rgb(34, 190, 52);
+		border-radius: 3px;
+		z-index: 2;
+	}
+	#close-popup {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		width: 16px;
+		height: 16px;
+		opacity: 0.3;
+		transition: all .3s ease;
+		cursor: pointer;
+	}
+	#close-popup:hover, #close-popup:hover {
+		opacity: 1;
+		transform: rotate(180deg);
+	}
+
+	#close-popup:before, #close-popup:after {
+		position: absolute;
+		left: 7px;
+		content: ' ';
+		height: 17px;
+		width: 2px;
+		background-color: #333;
+	}
+
+	#close-popup:before, #close-popup:after {
+		position: absolute;
+		left: 7px;
+		content: ' ';
+		height: 17px;
+		width: 2px;
+		background-color: #333;
+	}
+	#close-popup:before, #close-popup:before {
+		transform: rotate(45deg);
+	}
+	#close-popup:after, #close-popup:after {
+		transform: rotate(-45deg);
+	}
+	.popup-change {
+		display: block !important;
+		display: flex !important;
+	}
+</style>
+<body>
+
+	<div class="options">
+		<span id="close-popup"></span>
+		<p>Для работы расширения, необходимо ввести логин и пароль от аккаунта seller-online к которому подвязан ваш магазин на Ebay.</p>
+		<label>Login-<span class="require" title="Обязательное поле.">*</span> <i>Используйте почту на которую зарегистрирован аккаунт seleer-online.com.</i></label>
+		<input id="login" type="text" placeholder="Введите логин">
+		<label>Password-<span class="require" title="Обязательное поле.">*</span></label>
+		<input id="pass" type="password" placeholder="Введите пароль">
+		<a id="btn" href="#">Сохранить изменения</a>
+		<p>Если есть какие либо вопросы или предложения пишите мне на email: <b><i>alexxjc@gmail.com</i></b>.<br>В теме письма укажите "TTN".</p>
+		<div class="popup">
+			<h2>Готово!</h2>
+		</div>
+	</div>
+	<script src="js/options.js"></script>
+	
+</body>
+</html>

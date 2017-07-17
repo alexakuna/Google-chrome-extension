@@ -1,0 +1,157 @@
+.isMyFormForTrack {
+	margin-top: 5px;
+	white-space: inherit !important;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	padding: 3px
+}
+.ulTracing {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.imgPreloaderTtn {
+	width: 22px;
+	margin-bottom: -6px;
+}
+.ttnPreloader {
+	display: none;
+	float: right;
+	margin-right: 25px;
+}
+.btn-tracking {
+	opacity: 1;
+	cursor: pointer;
+	font-size: 12px !important;
+    padding: 0.585714em 0.8em !important;
+    border-radius: 2px !important;
+}
+#ttnCloseBtn {
+	float: right;
+}
+.popup-seller {
+	position: fixed;
+	margin: auto;
+	width: 50%;
+	height: 100%;
+	z-index: 999;
+	top: 0;
+	background: rgba(0, 0, 0, .7);
+	overflow-y: scroll;
+	color: #ffffff;
+}
+.popup-seller table a {
+	color: yellow !important;
+}
+.popup-seller tr td {
+	padding: 3px 0px 3px 15px !important;
+	border-bottom: 1px solid #cccccc;
+
+}
+.popup-seller .DataCell {
+	white-space: inherit;
+}
+.btn-close-popup {
+	float: right;
+	width: 25px;
+	height: 25px;
+	margin-right: 20px;
+}
+
+#BuyerEmail a {
+	display: inline-block;
+}
+
+#resultResTracking {
+	position: relative;
+	margin-top: 4px;
+	box-shadow: 0 1px 3px #333333;
+	max-height: 200px;
+	overflow-y: scroll;
+	width: 100%;
+}
+
+#resultResTracking div {
+	white-space: normal;
+}
+#resultResTracking .liketable-row {
+	border-bottom: 1px dotted tomato;
+	text-decoration: none;
+	padding: 2px 4px;
+}
+#resultResTracking .mobile-hide:last-child .liketable .liketable-row{
+	border-bottom: transparent;
+}
+#resultResTracking .liketable-row u {
+	text-decoration: none;
+
+}
+#resultResTracking .mobile-hide {
+	transition: background .3s ease;
+}
+#resultResTracking .mobile-hide:hover {
+	background: gainsboro;
+}
+.btn-seller {
+	cursor: pointer;
+	font-size: 12px !important;
+    padding: 0.585714em 0.8em !important;
+    border-radius: 2px !important;
+    margin-right: 0 !important;
+    flex:1;
+}
+.ui.loading.button::before,
+.ui.loading.button::after {
+    width: .9em !important;
+    height: .9em !important;
+}
+#btnClsResTrack, #btnClsResNote {
+position: absolute;
+right: 3px;
+top: 3px;
+width: 16px;
+height: 16px;
+opacity: 0.3;
+transition: all .3s ease;
+cursor: pointer;
+}
+#btnClsResTrack:hover, #btnClsResNote:hover {
+opacity: 1;
+transform: rotate(180deg);
+}
+
+#btnClsResNote:before, #btnClsResNote:after {
+position: absolute;
+left: 7px;
+content: ' ';
+height: 17px;
+width: 2px;
+background-color: #333;
+}
+
+#btnClsResTrack:before, #btnClsResTrack:after {
+position: absolute;
+left: 7px;
+content: ' ';
+height: 17px;
+width: 2px;
+background-color: #333;
+}
+#btnClsResTrack:before, #btnClsResNote:before {
+transform: rotate(45deg);
+}
+#btnClsResTrack:after, #btnClsResNote:after {
+transform: rotate(-45deg);
+}
+.note-block {
+	position: relative;
+	margin-top: 5px;
+	white-space: normal !important;
+	border: 2px solid tomato;
+	padding: 4px 5px;
+	border-radius: 2px;
+	color: tomato;
+	padding: 0 15px;
+	background: rgba(255, 99, 71, 0.05);
+
+}
